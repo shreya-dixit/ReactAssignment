@@ -37,7 +37,7 @@ const Editblog = () => {
         label="title"
         value={values.title}
         onChange={(e) => setValues({ ...values, title: e.target.value })}
-        inputProps={{ type: 'text', placeholder: 'Jhon Doe' }}
+        inputProps={{ type: 'text', placeholder: 'Title' }}
       />
       <br />
       <TextField
@@ -51,7 +51,7 @@ const Editblog = () => {
         label="content"
         value={values.content}
         onChange={(e) => setValues({ ...values, content: e.target.value })}
-        inputProps={{ type: 'content', placeholder: 'jhondoe@mail.com' }}
+        inputProps={{ type: 'content', placeholder: 'Description' }}
       />
       <Button onClick={handleEditblog}>Edit</Button>
       <Button onClick={goBack}>Back</Button>
